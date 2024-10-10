@@ -435,6 +435,15 @@ BackButtons.forEach(function(BackBtn) {
 });
 
 
+// Function to hide all sections
+function hideAllSections() {
+    FeatSec.style.display = 'none';
+    SolSec.style.display = 'none';
+    PlanSec.style.display = 'none';
+    ResSec.style.display = 'none';
+}
+
+
 ClickSecFeat.addEventListener('click', function() {
 
      // Check if the screen width is 1115px or below
@@ -485,4 +494,16 @@ ClickResources.addEventListener('click', function() {
     }
 
   
+})
+
+
+const SIGHIN = document.getElementById('signup');
+const CHECK  = document.getElementById('checkout');
+
+SIGHIN.addEventListener('click', function() {
+    window.location.href = 'login.html';
+});
+
+CHECK.addEventListener('click', function() {
+    window.location.href = 'login.html';
 })
