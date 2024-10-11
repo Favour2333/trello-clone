@@ -6295,6 +6295,10 @@ body {
     }
 
 
+    .footer .ft-content .list-items li a {
+        overflow-y: hidden;
+    }
+
 
 
 
