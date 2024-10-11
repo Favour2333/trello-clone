@@ -368,7 +368,6 @@ menuBtn.addEventListener('click', function() {
     cancelBtn.style.display = 'inline'; // display cancel button
     IconHeader.style.height = 'fit-content';
     IconHeader.style.flexDirection = 'column';
-    ICon.style.left = '0em';
     ListItems.style.display = 'flex';
     ListLogins.style.display = 'inline';
     ClickItems.style.paddingTop = '0px';
@@ -377,7 +376,6 @@ menuBtn.addEventListener('click', function() {
 
 cancelBtn.addEventListener('click', function() {
     cancelBtn.style.display = 'none';
-    ICon.style.left = '0em';
     if (menuBtn) {
         menuBtn.style.display = 'inline';   
     }
@@ -497,13 +495,10 @@ ClickResources.addEventListener('click', function() {
 })
 
 
-const SIGHIN = document.getElementById('signup');
-const CHECK  = document.getElementById('checkout');
+const SIGNUP = document.querySelectorAll('.signup');
 
-SIGHIN.addEventListener('click', function() {
-    window.location.href = 'login.html';
+SIGNUP.forEach(function(button) {
+    button.addEventListener('click', function() {
+        window.location.href = 'trello-login.html';
+    });
 });
-
-CHECK.addEventListener('click', function() {
-    window.location.href = 'login.html';
-})
