@@ -499,6 +499,6 @@ const SIGNUP = document.querySelectorAll('.signup');
 
 SIGNUP.forEach(function(button) {
     button.addEventListener('click', function() {
-        window.location.href = 'trello-login.html';
+        window.location.href = 'login.html';
     });
 });
